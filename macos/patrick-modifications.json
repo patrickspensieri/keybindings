@@ -1,0 +1,271 @@
+{
+  "title": "Patrick's personal modifications",
+  "rules": [{
+      "description": "Change (Option + h/j/k/l) to Arrows",
+      "manipulators": [{
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow"
+          }],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "down_arrow"
+          }],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "up_arrow"
+          }],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow"
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Change (Option + Shift + h/j/k/l) to (Shift + Arrows)",
+      "manipulators": [{
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_option",
+                "shift"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow",
+            "modifiers": [
+              "shift"
+            ]
+          }],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_option",
+                "shift"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "down_arrow",
+            "modifiers": [
+              "shift"
+            ]
+          }],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "k",
+            "modifiers": {
+              "mandatory": [
+                "left_option",
+                "shift"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "up_arrow",
+            "modifiers": [
+              "shift"
+            ]
+          }],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "l",
+            "modifiers": {
+              "mandatory": [
+                "left_option",
+                "shift"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow",
+            "modifiers": [
+              "shift"
+            ]
+          }],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Change (Caps Lock + h) to Backspace",
+      "manipulators": [{
+        "type": "basic",
+        "from": {
+          "key_code": "h",
+          "modifiers": {
+            "mandatory": [
+              "caps_lock"
+            ]
+          }
+        },
+        "to": [{
+          "key_code": "delete_or_backspace"
+        }]
+      }]
+    },
+    {
+      "description": "Change (Control + h) to Backspace",
+      "manipulators": [{
+        "type": "basic",
+        "from": {
+          "key_code": "l",
+          "modifiers": {
+            "mandatory": [
+              "control"
+            ]
+          }
+        },
+        "to": [{
+          "key_code": "delete_or_backspace"
+        }]
+      }]
+    },
+    {
+      "description": "Change (Control + l) to Forward Delete",
+      "manipulators": [{
+        "type": "basic",
+        "from": {
+          "key_code": "l",
+          "modifiers": {
+            "mandatory": [
+              "control"
+            ]
+          }
+        },
+        "to": [{
+          "key_code": "delete_forward"
+        }]
+      }]
+    },
+    {
+      "description": "Change (Option + u/o) to (Command + left/right)",
+      "manipulators": [{
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow",
+            "modifiers": [
+              "command"
+            ]
+          }]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow",
+            "modifiers": [
+              "command"
+            ]
+          }]
+        }
+      ]
+    },
+    {
+      "description": "Change (Option + Shift + u/o) to (Command + Shift + left/right)",
+      "manipulators": [{
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": [
+                "shift",
+                "left_option"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow",
+            "modifiers": [
+              "shift",
+              "command"
+            ]
+          }]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_option",
+                "shift"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "right_arrow",
+            "modifiers": [
+              "shift",
+              "command"
+            ]
+          }]
+        }
+      ]
+    }
+  ]
+}
