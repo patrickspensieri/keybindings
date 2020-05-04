@@ -137,23 +137,6 @@
       ]
     },
     {
-      "description": "Change (Caps Lock + h) to Backspace",
-      "manipulators": [{
-        "type": "basic",
-        "from": {
-          "key_code": "h",
-          "modifiers": {
-            "mandatory": [
-              "caps_lock"
-            ]
-          }
-        },
-        "to": [{
-          "key_code": "delete_or_backspace"
-        }]
-      }]
-    },
-    {
       "description": "Change (Control + h) to Backspace",
       "manipulators": [{
         "type": "basic",
@@ -264,6 +247,58 @@
               "command"
             ]
           }]
+        }
+      ]
+    },
+    {
+      "description": "Change (CapsLock) to (Control) if pressed with other keys",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "to_if_alone": [
+            {
+              "key_code": "caps_lock",
+              "hold_down_milliseconds": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Disable (CapsLock) delay",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "caps_lock",
+              "hold_down_milliseconds": 200
+            },
+            {
+              "key_code": "vk_none"
+            }
+          ]
         }
       ]
     }

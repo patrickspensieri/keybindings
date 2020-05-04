@@ -6,9 +6,8 @@
 
 Currently using the following modifications
 - Change (Option + h/j/k/l) to Arrows for moving
-- Change (Caps Lock + h) to Backspace
-- Change (Control + h) to Backspace
-- Change (Control + l) to Forward Delete
+- Change (Control/CapsLock + h) to Backspace
+- Change (Control/CapsLock + l) to Forward Delete
 - Change (Option + Shift + h/j/k/l) to (Shift + Arrows) for highlighting
 - Change (Option + u/o) to (Command + left/right) to move to start and end of line
 - Change (Option + Shift + u/o) to (Command + Shift + left/right) to highlight full lines
